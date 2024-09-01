@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://edu.umch.de/wp-content/uploads/2018/09/favicon-32x32.opt_.png"
+        type="image/x-icon">
+
+    <style>
+        .hospital-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+        }
+
+        .icon-right {
+            width: auto;
+            height: 50px;
+            margin-right: 50px;
+        }
+
+        .icon-left {
+            width: auto;
+            height: 50px;
+        }
+    </style>
+    <style>
+        .svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
+
+        .navbar-text {
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+
+
+        .jetzt {
+            background-color: #ffe943;
+            color: #1b3a54;
+            cursor: pointer;
+            padding: 1px 20px;
+            border: 0;
+            padding: 6px 20px;
+            border-radius: 20px;
+        }
+
+        .whatsup-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 2px;
+        }
+
+        .circle-container {
+            width: 30px;
+            height: 30px;
+            border: 3px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 4px;
+        }
+
+        .circle-container img {
+            fill: #fff;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
+
+        .germany-navbar {
+            margin-left: 50px;
+        }
+
+        .germany-navbar i {
+            margin-left: 5px;
+        }
+
+        .navbar-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .navbar-right svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: #004f71;
+            padding: 10px 50px;
+        }
+    </style>
+
+    <style>
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px 10px;
+            max-width: 300px;
+            margin-right: 50px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            background-color: #1b3a54;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+
+    <style>
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .left-image {
+            background-image: url('UMCH-Lehre-4.jpg');
+            /* Replace with your left image URL */
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 100vh;
+            /* Full viewport height */
+        }
+
+        .right-image {
+            background-image: url('assets/bilder/b-header.svg');
+            /* Replace with your right image URL */
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 80vh;
+            /* Full viewport height */
+            position: absolute;
+            right: 0;
+        }
+
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .left-image,
+            .right-image {
+                width: 100vw;
+                height: 50vh;
+                /* Half viewport height */
+            }
+        }
+    </style>
+
+    <style>
+        .about-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #1b3a54;
+            margin-bottom: 70px;
+        }
+
+        .about-img {
+            width: 120px;
+            height: 750px;
+        }
+
+        .card {
+            margin-top: 110px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav
+        class="navbar navbar-expand-lg navbar-light text-white d-flex justify-content-center align-items-center text-center">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="#">News </a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Events</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Press</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Karriere</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Shop</a></li>
+
+            </ul>
+            <div class="navbar-text">
+                <img style="margin-right: 5px;" class="svg" src="assets/icon/Icon Telefon.svg" alt="Telefon">
+                <span>Admissions</span>
+                <span style="margin-right: 20px;">+49 (0) 40-2093485-00</span>
+                <img style="margin-right: 5px;" class="svg" src="assets/icon/Icon Telefon.svg" alt="Telefon">
+                <span>Admissions</span>
+                <span>+49 (0) 40-2093485-00</span>
+            </div>
+            <div class="navbar-nav ms-auto">
+
+                <div class="circle-container">
+                    <img src="assets/icon/Icon Camera.svg" alt="Camera Icon">
+                </div>
+
+                <img class="whatsup-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
+                    alt="whatsup-icon">
+
+
+                <div class="germany-navbar">
+                    <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
+                    <i class="fas fa-chevron-down ml-2"></i>
+                </div>
+
+            </div>
+
+            <div class="navbar-nav ms-auto navbar-right">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    <a class="link" href="sign-in">Sign-in</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color: #1b3a54;"
+        class="d-flex justify-content-between align-items-center px-3 pt-4 pb-4 header">
+        <div class="d-flex">
+            <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="Image 1" class="icon-right me-2">
+            <img src="assets/logos/umch_blanco-opt.png" alt="Image 2" class="icon-left">
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="search-container">
+                <input type="text" class="search-input">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <button class="jetzt">Jetzt bewerben</button>
+        </div>
+    </header>
+
+    <!-- Links in a row -->
+    <div class="container my-3">
+        <div class="row">
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action me-4">Universität <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Studium <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action">Lehrkrankenhäuser <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action">Forschung</a></li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Aktuelles
+                    <i class="fas fa-chevron-down"></i></a> </li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Kontakt</a>
+            </li>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="left-image"></div>
+        <div class="right-image"></div>
+        <div class="center-text">
+            <h1>Bewerbung leicht
+                gemacht</h1>
+            <p>Wichtige Fakten zur Studienbewerbung</p>
+            <button class="jetzt">Jetzt bewerben</button>
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <section class="">
+        <div class="row">
+            <div class="col-md-4 about-img">
+                <img src="assets/bilder/Blue Color gradient2.png" alt="Blue Color gradient2" class="about-img">
+            </div>
+            <div class="col-md-4">
+                <div class="about-icons mt-4">
+                    <i class="fas fa-home me-2"></i>
+                    <span>Studium</span>
+                    <i class="fas fa-chevron-right me-2"></i>
+                    <span>Bewerbung</span>
+                </div>
+                <div>
+                    <p>Werden Sie zum UMCH-Studierenden</p>
+                    <h1>Einfach & unkompliziert online bewerben</h1>
+                    <p>Das Zulassungsverfahren für den UMCH kann jederzeit und unkompliziert absolviert
+                        werden. Es besteht aus einem motivationsbasierten Interview und einer Kurz-Evalua-
+                        tion, die Ergebnisse sind innerhalb von 48 Stunden verfügbar. Das Verfahren kann be-
+                        reits während der Schulzeit durchlaufen werden, entweder vor Ort in Hamburg oder per
+                        Video Call. Alternativ ist eine Zulassung über den Test für Medizinische Studiengänge
+                        (TMS) möglich. Voraussetzung für ein Studium am UMCH ist eine allgemeine Hoch-
+                        schulzugangsberechtigung oder ein gleichwertiger Abschluss. Die Auswahl erfolgt auf
+                        Grundlage der Bewerbungsunterlagen, eines Interviews und einer schriftlichen Prüfung
+                        zu Biologie, Chemie und Allgemeinwissen.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li>asdasdas</li>
+                            <li>asdasdas</li>
+                            <li>asdasdas</li>
+                            <li>asdasdas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Website Properties -->
+    <section class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="property1-image.jpg" class="img-fluid" alt="Property 1">
+                <p>Property 1 description.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="property2-image.jpg" class="img-fluid" alt="Property 2">
+                <p>Property 2 description.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="property3-image.jpg" class="img-fluid" alt="Property 3">
+                <p>Property 3 description.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Cards with Image -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="card1-image.jpg" class="card-img-top" alt="Card 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Card 1 content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="card2-image.jpg" class="card-img-top" alt="Card 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Card 2 content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="card3-image.jpg" class="card-img-top" alt="Card 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Card 3 content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Part -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview 1</h5>
+                        <p class="card-text">Interview details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview 2</h5>
+                        <p class="card-text">Interview details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview 3</h5>
+                        <p class="card-text">Interview details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview 4</h5>
+                        <p class="card-text">Interview details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospital -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="hospital-image.jpg" alt="Hospital Image" class="hospital-img">
+            </div>
+            <div class="col-md-4 text-center">
+                <p>Hospital text goes here.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="hospital-card-image.jpg" class="card-img-top" alt="Hospital Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hospital Card</h5>
+                        <p class="card-text">Hospital card content.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Div with Two Cards -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="card1-image.jpg" class="card-img-top" alt="Card 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Card 1 content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="card2-image.jpg" class="card-img-top" alt="Card 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Card 2 content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text and Button -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <p>Some text on the left.</p>
+            <button class="btn btn-primary">Click Here</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h5>Footer Section 1</h5>
+                    <p>Content for footer section 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Footer Section 2</h5>
+                    <p>Content for footer section 2.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Footer Section 3</h5>
+                    <p>Content for footer section 3.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
