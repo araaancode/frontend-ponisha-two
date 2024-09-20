@@ -4,229 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page</title>
+    <title>UMCH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="https://edu.umch.de/wp-content/uploads/2018/09/favicon-32x32.opt_.png"
         type="image/x-icon">
 
-    <style>
-        .hospital-img {
-            width: 100%;
-            height: auto;
-        }
+    <link rel="stylesheet" href="css/main.css">
 
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-        }
-
-        .icon-right {
-            width: auto;
-            height: 50px;
-            margin-right: 50px;
-        }
-
-        .icon-left {
-            width: auto;
-            height: 50px;
-        }
-    </style>
-    <style>
-        .svg {
-            fill: #fff;
-            width: 30px;
-            height: 30px;
-            color: #fff;
-            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
-            font-weight: bold;
-        }
-
-        .navbar-text {
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-        }
-
-
-        .jetzt {
-            background-color: #ffe943;
-            color: #1b3a54;
-            cursor: pointer;
-            padding: 1px 20px;
-            border: 0;
-            padding: 6px 20px;
-            border-radius: 20px;
-        }
-
-        .whatsup-icon {
-            width: 30px;
-            height: 30px;
-            margin-left: 2px;
-        }
-
-        .circle-container {
-            width: 30px;
-            height: 30px;
-            border: 3px solid #ddd;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 4px;
-        }
-
-        .circle-container img {
-            fill: #fff;
-            width: 20px;
-            height: 20px;
-            color: #fff;
-            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
-            font-weight: bold;
-        }
-
-        .germany-navbar {
-            margin-left: 50px;
-        }
-
-        .germany-navbar i {
-            margin-left: 5px;
-        }
-
-        .navbar-right {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-right: 20px;
-        }
-
-        .navbar-right svg {
-            width: 30px;
-            height: 30px;
-        }
-
-        .link {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 0 auto;
-            justify-content: center;
-            background-color: #004f71;
-            padding: 10px 50px;
-        }
-    </style>
-
-    <style>
-        .search-container {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            padding: 5px 10px;
-            max-width: 300px;
-            margin-right: 50px;
-        }
-
-        .search-input {
-            border: none;
-            outline: none;
-            flex-grow: 1;
-            background-color: #1b3a54;
-        }
-
-        .search-icon {
-            cursor: pointer;
-            color: #fff;
-        }
-    </style>
-
-    <style>
-        .banner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .left-image {
-            background-image: url('UMCH-Lehre-4.jpg');
-            /* Replace with your left image URL */
-            background-size: cover;
-            background-position: center;
-            width: 100vw;
-            height: 100vh;
-            /* Full viewport height */
-        }
-
-        .right-image {
-            background-image: url('assets/bilder/b-header.svg');
-            /* Replace with your right image URL */
-            background-size: cover;
-            background-position: center;
-            width: 200px;
-            height: 80vh;
-            /* Full viewport height */
-            position: absolute;
-            right: 0;
-        }
-
-        .center-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-            z-index: 1;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        @media screen and (max-width: 768px) {
-
-            .left-image,
-            .right-image {
-                width: 100vw;
-                height: 50vh;
-                /* Half viewport height */
-            }
-        }
-    </style>
-
-    <style>
-        .about-icons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: #1b3a54;
-            margin-bottom: 70px;
-        }
-
-        .about-img {
-            width: 120px;
-            height: 750px;
-        }
-
-        .card {
-            margin-top: 110px;
-            margin-left: 20px;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -241,50 +28,47 @@
                 <li class="nav-item"><a class="nav-link text-light" href="#">Press</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#">Karriere</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#">Shop</a></li>
-
             </ul>
+            <div class="separator"></div>
             <div class="navbar-text">
-                <img style="margin-right: 5px;" class="svg" src="assets/icon/Icon Telefon.svg" alt="Telefon">
+                <img style="margin-right: 5px;margin-left: 20px;" class="svg" src="assets/icon/Icon Telefon.svg"
+                    alt="Telefon">
                 <span>Admissions</span>
                 <span style="margin-right: 20px;">+49 (0) 40-2093485-00</span>
                 <img style="margin-right: 5px;" class="svg" src="assets/icon/Icon Telefon.svg" alt="Telefon">
                 <span>Admissions</span>
-                <span>+49 (0) 40-2093485-00</span>
+                <span style="margin-right: 20px;">+49 (0) 40-2093485-00</span>
             </div>
+            <div class="separator"></div>
             <div class="navbar-nav ms-auto">
-
                 <div class="circle-container">
                     <img src="assets/icon/Icon Camera.svg" alt="Camera Icon">
                 </div>
-
                 <img class="whatsup-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
                     alt="whatsup-icon">
-
-
                 <div class="germany-navbar">
                     <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
                     <i class="fas fa-chevron-down ml-2"></i>
                 </div>
-
             </div>
-
             <div class="navbar-nav ms-auto navbar-right">
-                <div class="">
+                <div class="separator"></div>
+                <div style="margin-left: 20px;" class="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
                     <a class="link" href="sign-in">Sign-in</a>
-                    <i class="fas fa-chevron-down"></i>
+                    <i style="margin-right: 10px;" class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header style="background-color: #1b3a54;"
-        class="d-flex justify-content-between align-items-center px-3 pt-4 pb-4 header">
+    <header style="background-color: #1b3a54; padding: 10px 50px;"
+        class="d-flex justify-content-between align-items-center pt-4 pb-4 header">
         <div class="d-flex">
             <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="Image 1" class="icon-right me-2">
             <img src="assets/logos/umch_blanco-opt.png" alt="Image 2" class="icon-left">
@@ -300,8 +84,7 @@
         </div>
     </header>
 
-    <!-- Links in a row -->
-    <div class="container my-3">
+    <div class="my-3 site-links">
         <div class="row">
             <li class="col list-group-item"><a href="#"
                     class="w-100 list-group-item list-group-item-action me-4">Universität <i
@@ -334,94 +117,167 @@
 
 
     <!-- About -->
-    <section class="">
-        <div class="row">
-            <div class="col-md-4 about-img">
-                <img src="assets/bilder/Blue Color gradient2.png" alt="Blue Color gradient2" class="about-img">
+    <div class="middle">
+        <div class="col-md-2 about-img">
+            <img src="assets/bilder/Blue Color gradient2.png" alt="Blue Color gradient2" class="about-img">
+        </div>
+        <div style="margin: 50px auto;" class="col-md-6">
+            <div class="about-icons mt-4">
+                <i class="fas fa-home me-2"></i>
+                <span>Studium</span>
+                <i class="fas fa-chevron-right me-2"></i>
+                <span>Bewerbung</span>
             </div>
-            <div class="col-md-4">
-                <div class="about-icons mt-4">
-                    <i class="fas fa-home me-2"></i>
-                    <span>Studium</span>
-                    <i class="fas fa-chevron-right me-2"></i>
-                    <span>Bewerbung</span>
-                </div>
-                <div>
-                    <p>Werden Sie zum UMCH-Studierenden</p>
-                    <h1>Einfach & unkompliziert online bewerben</h1>
-                    <p>Das Zulassungsverfahren für den UMCH kann jederzeit und unkompliziert absolviert
-                        werden. Es besteht aus einem motivationsbasierten Interview und einer Kurz-Evalua-
-                        tion, die Ergebnisse sind innerhalb von 48 Stunden verfügbar. Das Verfahren kann be-
-                        reits während der Schulzeit durchlaufen werden, entweder vor Ort in Hamburg oder per
-                        Video Call. Alternativ ist eine Zulassung über den Test für Medizinische Studiengänge
-                        (TMS) möglich. Voraussetzung für ein Studium am UMCH ist eine allgemeine Hoch-
-                        schulzugangsberechtigung oder ein gleichwertiger Abschluss. Die Auswahl erfolgt auf
-                        Grundlage der Bewerbungsunterlagen, eines Interviews und einer schriftlichen Prüfung
-                        zu Biologie, Chemie und Allgemeinwissen.</p>
-                </div>
+            <div>
+                <p>Werden Sie zum UMCH-Studierenden</p>
+                <h1>Einfach & unkompliziert online bewerben</h1>
+                <p>Das Zulassungsverfahren für den UMCH kann jederzeit und unkompliziert absolviert
+                    werden. Es besteht aus einem motivationsbasierten Interview und einer Kurz-Evalua-
+                    tion, die Ergebnisse sind innerhalb von 48 Stunden verfügbar. Das Verfahren kann be-
+                    reits während der Schulzeit durchlaufen werden, entweder vor Ort in Hamburg oder per
+                    Video Call. Alternativ ist eine Zulassung über den Test für Medizinische Studiengänge
+                    (TMS) möglich. Voraussetzung für ein Studium am UMCH ist eine allgemeine Hoch-
+                    schulzugangsberechtigung oder ein gleichwertiger Abschluss. Die Auswahl erfolgt auf
+                    Grundlage der Bewerbungsunterlagen, eines Interviews und einer schriftlichen Prüfung
+                    zu Biologie, Chemie und Allgemeinwissen.</p>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <ul>
-                            <li>asdasdas</li>
-                            <li>asdasdas</li>
-                            <li>asdasdas</li>
-                            <li>asdasdas</li>
-                        </ul>
-                    </div>
+        </div>
+        <div style="margin: 50px auto;" class="col-md-4">
+            <div class="about-card icon-list">
+                <div class="card-body">
+                    <ul class="about-list">
+                        <li class="list-group-item">
+                            <img class="ok-svg" src="assets/icon/Icon ok.svg" alt="Icon ok">
+                            <span> Ohne Wartezeit</span>
+                        </li>
+                        <li class="list-group-item">
+                            <img class="ok-svg" src="assets/icon/Icon ok.svg" alt="Icon ok">
+
+                            <span>NC-frei</span>
+                        </li>
+                        <li class="list-group-item">
+                            <img class="ok-svg" src="assets/icon/Icon ok.svg" alt="Icon ok">
+                            <span>Schon ab 11. und 12. Klasse möglich</span>
+                        </li>
+                        <li class="list-group-item">
+                            <img class="ok-svg" src="assets/icon/Icon ok.svg" alt="Icon ok">
+                            <span>Keine Zulassungsbe-
+                                schränkung</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
     <!-- Website Properties -->
-    <section class="container my-5">
+    <section class="properties">
         <div class="row text-center">
+            <p style="color: #1b3a54;margin-top: 50px;">Zum Medizinstudium in nur <span
+                    style="color: #1b3a54;font-weight: bold;">3
+                    Schritten</span></p>
+            <h1>So einfach funktioniert das Bewerbungsverfahren</h1>
             <div class="col-md-4">
-                <img src="property1-image.jpg" class="img-fluid" alt="Property 1">
-                <p>Property 1 description.</p>
+                <img src="assets/icon/Icon registration.svg" class="prop-icon" alt="Property 1">
+                <p style="color: #1b3a54;font-weight: bold;"><span style="font-size: 40px;color: #1b3a54;">1. </span>
+                    Short Registration
+                    über unser Online-
+                    Bewerbungsportal</p>
             </div>
             <div class="col-md-4">
-                <img src="property2-image.jpg" class="img-fluid" alt="Property 2">
-                <p>Property 2 description.</p>
+                <img src="assets/icon/Icon Interview.svg" class="prop-icon" alt="Property 2">
+                <p style="color: #1b3a54;font-weight: bold;"><span style="font-size: 40px;color: #1b3a54;">2.
+                    </span>Motivationsbasiertes
+                    Interview und
+                    Kurz-Evaluation</p>
             </div>
             <div class="col-md-4">
-                <img src="property3-image.jpg" class="img-fluid" alt="Property 3">
-                <p>Property 3 description.</p>
+                <img src="assets/icon/Icon Telefon.svg" class="about-img prop-icon" alt="Property 3">
+                <p style="color: #1b3a54;font-weight: bold;"><span style="font-size: 40px;color: #1b3a54;">3. </span>
+                    Gratulation! Der
+                    Studienvertrag kann
+                    unterzeichnet werden</p>
             </div>
+
+            <button class="jetzt">Jetzt bewerben</button>
+            <p style="color: #1b3a54;font-size: 15px;">Oder haben Sie noch Fragen?</p>
+            <p style="color: #1b3a54;font-size: 15px;">Unser <span style="font-weight: bold;">Admissions-Team</span>
+                hilft gerne weiter</p>
         </div>
     </section>
 
     <!-- Three Cards with Image -->
-    <section class="container my-5">
+    <section class="container three">
         <div class="row">
+            <p class="text-center" style="color: #999;font-weight: bold;margin-top: 10px;margin-bottom: 5px;">So kommen
+                Sie an ein Studium am UMCH</p>
+            <h3 class="text-center" style="color: #1b3a54;">Vorraussetzungen für ein Studium</h3>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="card1-image.jpg" class="card-img-top" alt="Card 1 Image">
+                <div class="card-three">
+                    <img src="assets/ponisha2/1.png" class="" alt="Card 1 Image">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">Card 1 content.</p>
+                        <h5 class="card-title" style="margin-bottom: 15px;font-weight: bold;">Zulassungs-
+                            voraussetzungen</h5>
+                        <p class="card-text">Für ein Studium am UMCH benöti-
+                            gen Sie eine allgemeine Hochschul-
+                            zugangsberechtigung (Abitur oder
+                            Äquivalent). Auch Bewerbungen mit
+                            ausländischen Schulabschlüssen, die
+                            dem deutschen Abitur entsprechen
+                            (z. B. A-Levels, IB), sind möglich. Be-
+                            werber mit anderen Abschlüssen
+                            oder Nicht-EU-Bürger sollten sich
+                            beim UMCH-Team informieren. Früh-
+                            zeitige Bewerbungen sind emp-
+                            fohlen, da die Studienplatzvergabe
+                            sukzessive erfolgt. Zum Zeitpunkt
+                            der Bewerbung sollten Sie sich in der
+                            Oberstufe oder bereits im Besitz ei-
+                            ner Hochschulzugangsberechtigung
+                            befinden.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="card2-image.jpg" class="card-img-top" alt="Card 2 Image">
+                <div class="card-three">
+                    <img src="assets/ponisha2/2.png" class="" alt="Card 2 Image">
                     <div class="card-body">
-                        <h5 class="card-title">Card 2</h5>
-                        <p class="card-text">Card 2 content.</p>
+                        <h5 class="card-title" style="margin-bottom: 15px;font-weight: bold;">NC-freies
+                            Zulassungsverfahren</h5>
+                        <p class="card-text">Die Aufnahme eines Studiums der
+                            Humanmedizin am Campus in Ham-
+                            burg erfolgt unabhängig von Ihren
+                            Schulnoten. Sie können dieses ohne
+                            Wartezeit pünktlich zum nächst-
+                            möglichen Wintersemester begin-
+                            nen. Einzige Voraussetzung dafür ist
+                            die erfolgreiche Teilnahme am uni-
+                            versitätseigenen Zulassungsverfah-
+                            ren.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="card3-image.jpg" class="card-img-top" alt="Card 3 Image">
+                <div class="card-three">
+                    <img src="assets/ponisha2/3.png" class="" alt="Card 3 Image">
                     <div class="card-body">
-                        <h5 class="card-title">Card 3</h5>
-                        <p class="card-text">Card 3 content.</p>
+                        <h5 class="card-title" style="margin-bottom: 15px;font-weight: bold;">Sofortzulassung am
+                            UMCH durch
+                            TMS-Teilnahme</h5>
+                        <p class="card-text">Eine Hochschulstart-Bewerbung ist
+                            am UMCH nicht erforderlich. Die Zu-
+                            lassung erfolgt normalerweise über
+                            ein Motivations- und Eignungsinter-
+                            view sowie eine schriftliche Kurzeva-
+                            luation. Wer jedoch am TMS teilge-
+                            nommen und mindestens 70 Punkte
+                            erreicht hat, erhält eine Sofortzulas-
+                            sung, vorausgesetzt, es sind noch
+                            Studienplätze verfügbar. In diesem
+                            Fall entfällt das UMCH-eigene Zulas-
+                            sungsverfahren.</p>
                     </div>
                 </div>
             </div>
@@ -429,87 +285,215 @@
     </section>
 
     <!-- Interview Part -->
-    <section class="container my-5">
+    <section style="background-color: #eff2f5;" class="interview">
         <div class="row">
             <div class="col-md-6">
-                <div class="card">
+                <div style="color: #1b3a54;">
                     <div class="card-body">
-                        <h5 class="card-title">Interview 1</h5>
-                        <p class="card-text">Interview details.</p>
+                        <p class="card-title mb-4">Die Auswahl der zukünftigen UMCH-Studierenden erfolgt auf Grundlage
+                            der
+                            schriftlichen Bewerbungsunterlagen und unseres Zulassungsverfahrens.</h5>
+                        <p class="card-title mb-4">m mündlichen Teil des Zulassungsverfahrens geht es in erster Linie um
+                            die
+                            persönliche Qualifikation und Motivation des Bewerbers. Dazu können auch
+                            Fragen zu den von Ihnen eingereichten Bewerbungsunterlagen gehören
+                            (z. B. Arbeits- oder Praktikumsbescheinigungen für frühere Tätigkeiten im
+                            medizinischen Bereich oder ehrenamtliche Tätigkeiten usw.).</p>
+                        <p class="card-title mb-4">Der schriftliche Teil besteht aus 75 Multiple-Choice-Fragen zu
+                            Biologie,
+                            Chemie und Allgemeinwissen. Alle drei Bereiche sind gleich gewichtet.</p>
+                        <p class="card-title mb-4">Die Ergebnisse des schriftlichen und mündlichen Teils werden in einem
+                            Verhältnis von 60:40 in die Gesamtbewertung einbezogen.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
+                <div class="">
                     <div class="card-body">
-                        <h5 class="card-title">Interview 2</h5>
-                        <p class="card-text">Interview details.</p>
+                        <img src="assets/ponisha2/4.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-md-6">
-                <div class="card">
+                <div class="interview-card">
+                    <div class="card-header-one">
+                        <p>Interview</p>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Interview 3</h5>
-                        <p class="card-text">Interview details.</p>
+                        <p class="card-title" style="color: #1b3a54;font-weight: bold;">Sprache:</p>
+                        <p class="card-text">Englisch</p>
+
+                        <p class="card-title" style="color: #1b3a54;font-weight: bold;">Mögliche Themen:</p>
+                        <p class="card-text">- Qualifikation und Motivation für das Studium</p>
+                        <p class="card-text">- Bisherige Aktivitäten im medizinischen Bereich</p>
+                        <p class="card-text">- Vorstellung zum Karriereverlauf</p>
+                        <p class="card-text">- Kommunikations- und Empathiefähigkeiten</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Interview 4</h5>
-                        <p class="card-text">Interview details.</p>
+                <div class="interview-card">
+                    <div class="card-header-two">
+                        <p>Kurz-Evaluation</p>
                     </div>
+                    <div class="card-body">
+                        <p class="card-title" style="color: #1b3a54;font-weight: bold;">Sprache:</p>
+                        <p class="card-text">Englisch</p>
+                        <p style="color: #1b3a54;font-weight: bold;" class="card-text">- Grundlegende Fragen zu Biologie
+                        </p>
+                        <p style="color: #1b3a54;font-weight: bold;" class="card-text">- Grundlegende Fragen zu Chemie
+                        </p>
+                        <p style="color: #1b3a54;font-weight: bold;" class="card-text">- Grundlegende Fragen zu</p>
+                        <p style="color: #1b3a54;font-weight: bold;" class="card-text">- Allgemeinwissen</p>
+                        <p style="color: #1b3a54;font-weight: bold;" class="card-text">- Gleiche Gewichtung der Themen
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-9 my-3">
+                <div class="last-interview">
+                    <div class="">
+                        <h4 style="color: #fff;">Key Facts zum
+                            Zulassungsverfahren</h4>
+                        <div class="responsive-separator"></div>
+                        <h5 style="color: #fff;margin-bottom: 20px;">Wie viel Zeit habe ich für die beiden Bereiche?
+                        </h5>
+                        <p style="color: #fff;">- Das Interview dauert 15-20 Minuten.</p>
+                        <p style="color: #fff;">- Für die Evaluation (Multiple-Choice-Fragen) haben Sie 90 Minuten Zeit.
+                        </p>
+                        <div class="responsive-separator"></div>
+                        <h5 style="color: #fff;margin-bottom: 20px;">Wer das Zulassungsverfahren vollständig
+                            durchlaufen hat, erhält</h5>
+                        <p style="color: #fff;">- nach Verfügbarkeit der Plätze eine Zusage für das Wintersemester
+                            2024/2025
+                            oder</p>
+                        <p style="color: #fff;">- eine Absage</p>
+                        <div class="responsive-separator"></div>
+                        <p style="color: #fff;">Eine etwaige Wartezeit können Sie mit der Teilnahme an einem unserer
+                            Vorbereitungskurse
+                            überbrücken. Wir bieten den 3 oder 12-wöchigen ,,Medical Foundation Track“ an. Nähere
+                            Informationen hierzu finden Sie hier.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 my-3">
+                <div class="interview-card-one">
+                    <img style="height: 100%;width: 100%;" src="assets/ponisha2/6.png" alt="6.png">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Hospital -->
-    <section class="container my-5">
+    <div class="">
         <div class="row">
-            <div class="col-md-4">
-                <img src="hospital-image.jpg" alt="Hospital Image" class="hospital-img">
+            <!-- Left Column: Fixed Image -->
+            <div style="width: 200px;height: 100%;" class="col-md-4">
+                <img src="assets/bilder/Blue Color gradient2.png" class="fixed-image" alt="Fixed Image">
             </div>
-            <div class="col-md-4 text-center">
-                <p>Hospital text goes here.</p>
+
+            <!-- Center Column: Text and Image -->
+            <div style="margin: 50px auto;" class="col-md-4">
+                <p style="color: #1b3a54;text-align: center;">Setzen Sie Ihr Medizinstudium am UMCH fort</p>
+                <h3 style="color: #1b3a54;margin-bottom: 10px;text-align: center;">Studienortwechsel</h3>
+                <div style="color: #1b3a54;margin-top: 20px;">
+                    <p style="font-weight: bold;font-size: 18px;">Setzen Sie Ihr Medizinstudium am UMCH
+                        in Hamburg fort, wenn Sie
+                        bereits ein Medizinstudium an einer ande-
+                        ren Universität begonnen haben.</p>
+                    <p>Wenn Sie bereits ein Studium der Medizin an einer an-
+                        deren Universität begonnen haben, ist es grundsätzlich
+                        möglich, am UMCH dort weiter zu studieren, wo Sie zu-
+                        letzt aufgehört haben – optimalerweise ohne Zeit zu
+                        verlieren. Wir prüfen hierzu, welche Leistungen, die Sie
+                        akademisch bereits erbracht haben, angerechnet werden
+                        können und was Sie unter Umständen nachholen müs-
+                        sen. Bitte kontaktieren Sie uns für eine unverbindliche
+                        Vorabprüfung, nach welcher wir Ihnen mitteilen, ob wir
+                        Ihnen Studienzeit und/oder -leistungen anrechnen kön-
+                        nen. Hierfür benötigen wir lediglich einige eingescannte
+                        Dokumente, die Sie uns per E-Mail an info@edu.umch.de
+                        zusenden können.</p>
+                    <img src="assets/ponisha2/9.png" class="content-image" alt="Center Image">
+                </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="hospital-card-image.jpg" class="card-img-top" alt="Hospital Card Image">
+
+            <!-- Right Column: Bootstrap Card -->
+            <div style="margin-top: 50px;margin-right: 50px;" class="col-md-4">
+                <div class="card custom-card">
                     <div class="card-body">
-                        <h5 class="card-title">Hospital Card</h5>
-                        <p class="card-text">Hospital card content.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4 class="card-title" style="font-weight: bold;">Als Scans einzureichende
+                            Dokumente</h4>
+                        <h6 style="font-weight: bold;">Transcript of Records</h6>
+                        <p style="font-weight: bold;">Auf Englisch</p>
+                        <p>Falls das Dokument Ihnen lediglich in einer anderen Sprache vorliegt,
+                            reichen Sie bitte eine englischsprachige Übersetzung ein.</p>
+
+                        <h6 style="font-weight: bold;">Lehrplan (Syllabus)</h6>
+                        <p style="font-weight: bold;">Ihrer bisherigen Universität</p>
+                        <p>Dieser muss die Menge an ECTS-Punkten enthalten, die Sie pro Fach
+                            erhalten haben beziehungsweise die Stundenanzahl pro Fach wider-
+                            spiegeln.</p>
+
+
+                        <h6 style="font-weight: bold;">Transfer Request Questionnaire</h6>
+                        <p style="font-weight: bold;">Auf Englisch</p>
+                        <p>Bitte füllen Sie das entsprechende PDF-Formular aus, speichern es,
+                            scannen es ein und und schicken es gemeinsam mit den Scans der
+                            oben genannten Dokumente an admissions@edu.umch.de.</p>
+                        <img class="download-icon" src="assets/ponisha2/10.png" alt="download-icon">
+                        <button class="blue-button">Download: Transfer Request Questionnaire</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Div with Two Cards -->
-    <section class="container my-5">
+    <section class="two-cards">
         <div class="row">
             <div class="col-md-6">
-                <div class="card">
-                    <img src="card1-image.jpg" class="card-img-top" alt="Card 1 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">Card 1 content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                <div class="card two-card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img height="100%" src="assets/ponisha2/7.png" class="rounded-start" alt="Card Image">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-4">
+                                <h5 class="card-title">Studiengebühren</h5>
+                                <p class="card-text">Um den Studierenden
+                                    ein erstklassiges Medizin-
+                                    studium zu ermöglichen,
+                                    werden Studiengebühren
+                                    erhoben.</p>
+                                <button class="two-card-btn">Mehr +</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <img src="card2-image.jpg" class="card-img-top" alt="Card 2 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 2</h5>
-                        <p class="card-text">Card 2 content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                <div class="card two-card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img height="100%" src="assets/ponisha2/8.png" class="rounded-start" alt="Card Image">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-4">
+                                <h5 class="card-title">Studiengebühren</h5>
+                                <p class="card-text">Um den Studierenden
+                                    ein erstklassiges Medizin-
+                                    studium zu ermöglichen,
+                                    werden Studiengebühren
+                                    erhoben.</p>
+                                <button class="two-card-btn">Mehr +</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -519,35 +503,129 @@
     <!-- Text and Button -->
     <section class="container my-5">
         <div class="d-flex justify-content-between align-items-center">
-            <p>Some text on the left.</p>
-            <button class="btn btn-primary">Click Here</button>
+            <p class="primary-color font-bold pl-5" style="font-size: 25px;">Vereinbaren Sie kostenlos und unverbindlich
+                einen
+                Online-Beratungstermin inklusive virtueller Campustour.</p>
+            <button class="camera-btn" style="padding: 20px;border-radius: 35px;">
+                <img class="svg-btn" src="assets/icon/Icon Camera.svg" alt="Camera">
+                <span class="text-large">Online Beratungstermin</span>
+            </button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <h5>Footer Section 1</h5>
-                    <p>Content for footer section 1.</p>
+    <footer class="text-white px-4 py-4" style="background-color: #004d6e;">
+        <!-- First Row -->
+        <div class="container mx-auto row row-cols-1 row-cols-md-4 g-3 px-4 pt-4">
+            <!-- First Column: Image with text below it -->
+            <div class="col text-center">
+                <img src="assets/logos/umch_blanco-opt.png" alt="umch_blanco" class="d-block mx-auto mb-2 umch_blanco">
+                <p class="mt-2 text-left small">Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="col text-center text-md-start small">
+                <p>Albert-Einstein-Ring 11-15</p>
+                <p>22761 Hamburg, Deutschland</p>
+                <p>Tel.: +49 (0) 40-2093485-00</p>
+                <p>Fax.: +49 (0) 40-2093485-09</p>
+                <p>E-Mail: info@edu.umch.de</p>
+            </div>
+            <!-- Third Column: Image with text below it -->
+            <div class="col text-center small">
+                <img width="70px" height="70px" src="assets/logos/UMCH rund.svg" alt="UMCH 2"
+                    class="d-block mx-auto mb-2">
+                <p>Impressum</p>
+                <p>Datenschutz</p>
+            </div>
+            <!-- Fourth Column: Image with text below it -->
+            <div class="col text-center small">
+                <img width="70px" height="70px" src="assets/logos/Medaille.png" alt="Medaille"
+                    class="w-20 h-20 d-block mx-auto">
+                <p class="mt-2">George Emil Palade</p>
+                <p>Nobelpreisgewinner</p>
+                <p>und Namensgeber</p>
+                <p>der Universität</p>
+            </div>
+        </div>
+
+        <!-- Divider with text -->
+        <div class="d-flex align-items-center mx-auto px-4 w-100">
+            <span class="me-4">Eine Niederlassung der</span>
+            <div class="border-top border-2 border-secondary flex-grow-1"></div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="flex mx-auto row row-cols-1 row-cols-md-4 g-3 px-4 py-2 small second-row-footer">
+            <!-- First Column: Image with text below it -->
+            <div class="col text-center">
+                <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="umfst-logo-neu_whiteENG-01-1-7"
+                    class="d-block umfst-logo-neu_white">
+                <p class="mt-4">Universität für Medizin, Pharmazie,</p>
+                <p>Naturwissenschaften und Technik</p>
+                <p>Neumarkt am Mieresch</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="col text-center text-md-start">
+                <p class="fw-bold">Contact Us</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: contact@hospital.com</p>
+                <p>Address: 123 Health St, Medical City</p>
+            </div>
+            <!-- Third Column: Social Media Logos -->
+            <div class="col text-center">
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <img src="assets/bilder/Samy_Hoddie_outline.png" alt="Samy_Hoddie_outline" class="img-fluid">
+                    <img src="data:image/png;base64,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"
+                        class="bordered-image">
+
                 </div>
-                <div class="col-md-4">
-                    <h5>Footer Section 2</h5>
-                    <p>Content for footer section 2.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Footer Section 3</h5>
-                    <p>Content for footer section 3.</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="#" class="mx-1 text-white social-media-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mx-1 text-white"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="mx-1 text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="mx-1 text-white"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col text-center">
-                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+
+        <!-- HTML with Tailwind CSS -->
+        <hr class="border-top border-light my-4">
+
+        <!-- Third Row -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-2">
+            <div class="container d-flex justify-content-between w-100">
+                <!-- Language Selection -->
+
+                <!-- Main Content Area -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
+                    <!-- First Text on the Left -->
+                    <div class="text-start mb-4 mb-md-0">
+                        <p class="small">
+                            @2024 – UMCH – Universitätsmedizin Neumarkt am Mieresch Campus Hamburg
+                        </p>
+                    </div>
+
+                    <!-- Container for Three Texts on the Right -->
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-end text-center">
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">UMCH
+                            Shop</a>
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">UMCH
+                            Medical Foundation
+                            Track</a>
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">
+                            <i class="far fa-envelope me-1"></i> Contact us
+                        </a>
+                    </div>
+                    <div class="d-flex mb-2 mb-md-0">
+                        <p class="mx-2">DE</p>
+                        <p>ENG</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
