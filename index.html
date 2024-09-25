@@ -205,7 +205,16 @@
   </ul>
 
   <!-- Banner  -->
- 
+  <div class="banner">
+    <div class="banner-content">
+      <h1 class="font-bold">Bewerbung leicht
+        gemacht</h1>
+      <h4 class="mt-2">Explore the amazing features we offer.</h4>
+      <button href="#" class="banner-btn">Jetzt bewerben</button>
+    </div>
+    <div class="right-image"></div>
+  </div>
+
 
   <!-- Studium -->
   <div class="studium">
@@ -220,7 +229,7 @@
           <i class="fas fa-chevron-right me-2"></i>
           <span class="font-bold">Bewerbung</span>
         </div>
-        <div>
+        <div class="studium-text">
           <p class="font-bold text-secondary">Werden Sie zum UMCH-Studierenden</p>
           <h1>Einfach & unkompliziert online bewerben</h1>
           <p>Das Zulassungsverfahren für den UMCH kann jederzeit und unkompliziert absolviert
@@ -270,28 +279,28 @@
     <div class="row text-center">
       <p id="medizinstudium-text" class="text-secondary font-bold mt-4">Zum Medizinstudium in nur <span
           class="text-dark-blue font-bold three-underline">3 Schritten</span></p>
-      <h1>So einfach funktioniert das Bewerbungsverfahren</h1>
-      <div class="col-md-4">
+      <h1 class="font-bold">So einfach funktioniert das Bewerbungsverfahren</h1>
+      <div class="col-md-4 medizinstudium-numbers">
         <img src="assets/icon/Icon registration.svg" class="prop-icon" alt="Property 1">
-        <p class="text-dark-blue font-bold">
+        <p class="text-dark-blue font-bold medizinstudium-list mt-2">
           <span class="text-dark-blue font-bold">1. </span>
           Short Registration
           über unser Online-
           Bewerbungsportal
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 medizinstudium-numbers">
         <img src="assets/icon/Icon Interview.svg" class="prop-icon" alt="Property 2">
-        <p class="text-dark-blue font-bold">
+        <p class="text-dark-blue font-bold medizinstudium-list mt-2">
           <span class="text-dark-blue font-bold">2.
           </span>Motivationsbasiertes
           Interview und
           Kurz-Evaluation
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 medizinstudium-numbers">
         <img src="assets/icon/Icon Telefon.svg" class="about-img prop-icon" alt="Property 3">
-        <p class="text-dark-blue font-bold">
+        <p class="text-dark-blue font-bold medizinstudium-list mt-2">
           <span class="text-dark-blue font-bold">3. </span>
           Gratulation! Der
           Studienvertrag kann
@@ -407,7 +416,8 @@
           <p class="card-title mb-4 text-dark-blue">Der schriftliche Teil besteht aus 75 Multiple-Choice-Fragen zu
             Biologie,
             Chemie und Allgemeinwissen. Alle drei Bereiche sind gleich gewichtet.</p>
-          <p class="card-title mb-4 text-dark-blue">Die Ergebnisse des schriftlichen und mündlichen Teils werden in einem
+          <p class="card-title mb-4 text-dark-blue">Die Ergebnisse des schriftlichen und mündlichen Teils werden in
+            einem
             Verhältnis von 60:40 in die Gesamtbewertung einbezogen.</p>
         </div>
       </div>
@@ -493,7 +503,7 @@
 
 
   <!-- Hospital -->
-  <section class="container-fluid">
+  <section class="container-fluid hospital">
     <div class="row">
 
       <div class="col-md-2 no-gutter">
@@ -501,12 +511,12 @@
       </div>
 
       <div class="col-md-8 my-4">
-        <p class="text-center text-secondary font-bold">Setzen Sie Ihr Medizinstudium am UMCH fort</p>
+        <h6 class="text-center text-muted font-bold mt-4">Setzen Sie Ihr Medizinstudium am UMCH fort</h6>
         <h2 class="text-center font-bold text-dark-blue mb-4">Studienortwechsel</h2>
         <div class="container-fluid mt-4">
           <div class="row">
             <!-- right -->
-            <div class="col-md-6 right-content-hospital">
+            <div class="col-md-5 right-content-hospital">
               <div class="text-dark-blue">
                 <h5 class="font-bold text-dark-blue mb-4">Setzen Sie Ihr Medizinstudium am UMCH
                   in Hamburg fort, wenn Sie
@@ -529,7 +539,7 @@
                 <img src="assets/ponisha2/9.png" class="hospital-bottom-image" alt="Hospital Image">
               </div>
             </div>
-
+            <div class="col-md-1"></div>
             <!-- left -->
             <div class="col-md-6 hospital-left-column">
               <h3 class="card-title font-bold">Als Scans einzureichende
@@ -761,6 +771,26 @@
       </div>
     </div>
   </footer>
+
+  <div class="sidebar  d-none d-md-block">
+    <div class="applyButton">Jetzt bewerben</div>
+    <div class="iconContainer p-2">
+      <a href="#" class="borderYellow border border-2 rounded-circle p-2 my-2">
+        <i class="fa fa-hospital p-1" style="color: #fbe949;"></i>
+
+      </a>
+      <a href="#" class="borderYellow border border-2 rounded-circle p-2 my-2">
+        <i class="fa fa-envelope p-1" style="color: #fbe949;"></i>
+
+      </a>
+      <a href="#" class="borderYellow border border-2 rounded-circle p-2 my-2">
+        <i class="fa fa-video p-1" style="color: #fbe949;"></i>
+      </a>
+      <a href="#" class="borderYellow border border-2 rounded-circle p-2 my-2">
+        <i class="fa fa-phone p-1" style="color: #fbe949;"></i>
+      </a>
+    </div>
+  </div>
 
   <!-- scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
